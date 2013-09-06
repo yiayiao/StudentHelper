@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/move_back" />
+
+        <WebView
+            android:id="@+id/httpBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WebView" />
+
+        <TextView
+            android:id="@+id/inputsample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="@string/TextView" />
+
+        <WebView
+            android:id="@+id/httpBehindInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WebView" />
+
+        <TextView
+            android:id="@+id/outputsample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="@string/TextView" />
+
+        <WebView
+            android:id="@+id/httpBehindOutput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WebView" />
+    </LinearLayout>
+
+</ScrollView>

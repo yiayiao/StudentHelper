@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkcolor"
+    android:shrinkColumns="0,1" >
+
+    <TableRow android:layout_width="fill_parent" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc"
+            android:minHeight="100dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_launcher" />
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent" >
+
+        <TextView
+            android:id="@+id/chosseProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/lypad10"
+            android:paddingRight="@dimen/lypad10"
+            android:text="@string/gpa_message_shows"
+            android:textSize="21dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/studentNumMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:paddingLeft="50dp"
+            android:paddingRight="@dimen/lypad10"
+            android:text="@string/student_number"
+            android:textSize="25dp"
+            android:width="150dp" />
+
+        <EditText
+            android:id="@+id/studentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_column="1"
+            android:layout_marginRight="40dp"
+            android:ems="20"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/studentPasswordMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:paddingLeft="50dp"
+            android:paddingRight="@dimen/lypad10"
+            android:text="@string/student_password"
+            android:textSize="25dp"
+            android:width="150dp" />
+
+        <EditText
+            android:id="@+id/studentPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_column="1"
+            android:layout_marginRight="40dp"
+            android:ems="20"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:minHeight="40dp" >
+
+        <TextView />
+
+        <Button
+            android:id="@+id/gpaLoginSubmit"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/login" />
+    </TableRow>
+
+</TableLayout>

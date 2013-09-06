@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkcolor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/basicInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/TextView"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/basicInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/TextView"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/gpaListChoose"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="选择您的去向"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/gpaList"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2.5"
+            android:text="B" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gpaChooseSubmit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="180dp"
+        android:text="@string/submit" />
+
+</LinearLayout>
